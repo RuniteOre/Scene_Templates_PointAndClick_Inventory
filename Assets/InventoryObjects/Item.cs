@@ -7,12 +7,12 @@ public class Item {
     public string itemName;
     [TextArea] public string itemDescription;
     public Sprite itemIcon;
-    public Dictonary<string, int> itemStats = new Dictonary<string, int>();
+    public Dictionary<string, int> itemStats = new Dictionary<string, int>();
     public Item(int itemID, string itemName, string itemDescription, Dictionary<string, int> stats) {
         this.itemID = itemID;
         this.itemName = itemName;
         this.itemDescription = itemDescription;
-        this.itemIcon = Resources.load<Sprite>("Sprites" + itemName)
+        this.itemIcon = Resources.Load<Sprite>("Sprites" + itemName);
 
     }
 
